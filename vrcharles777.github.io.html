@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://vrcharles777.github.io/transponer/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body onload="zoom()" style="zoom: 400%;">
+<div align="center">
+		<button onclick="myFunction2()">Retroceder</button>
+		<button onclick="myFunction()">Avanzar</button><br>
+		<textarea rows="40" cols="40" id="myTextarea"></textarea>
+</div>
+
+<script>
+function zoom() {
+            document.body.style.zoom = "400%" 
+        }
+
+function myFunction() {
+
+var lista=['C','C#','D','D#','E','F','F#','G','G#','A','A#','B','C'];
+
+var str = document.getElementById("myTextarea").value;
+var str2="";
+for(i=0; i<str.length; i++){
+	var cambiado=0;
+	var x=str.charAt(i);
+	if(str.charAt(i+1)=='#'){
+		x+=str.charAt(i+1);
+        i=i+1;
+	}
+    for(j=0;j<lista.length;j++){
+    	if(cambiado==0&&x==lista[j]){
+              x = lista[j+1];
+              cambiado=1;
+        }
+     }
+              
+str2+=x;
+}
+
+document.getElementById("myTextarea").value=str2;
+
+}
+
+
+//===================
+function myFunction2() {
+
+var lista2=['B','A#','A','G#','G','F#','F','E','D#','D','C#','C','B'];
+
+var str = document.getElementById("myTextarea").value;
+var str2="";
+for(i=0; i<str.length; i++){
+	var cambiado=0;
+	var x=str.charAt(i);
+	if(str.charAt(i+1)=='#'){
+		x+=str.charAt(i+1);
+        i=i+1;
+	}
+    for(j=0;j<lista2.length;j++){
+    	if(cambiado==0&&x==lista2[j]){
+              x = lista2[j+1];
+              cambiado=1;
+        }
+     }
+              
+str2+=x;
+}
+
+document.getElementById("myTextarea").value=str2;
+    }
+</script>
+</body></html>
