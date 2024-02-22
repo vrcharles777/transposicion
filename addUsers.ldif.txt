@@ -1,0 +1,43 @@
+dn: uid=admin,ou=users,ou=administradors,dc=cavicenteru,dc=hades
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: admin
+sn: system
+userPassword: {Crear cadadascú el seu} (cavicenteru)
+loginShell: /bin/bash
+homeDirectory: /home/admin
+uidNumber: 6000
+gidNumber: 6000
+ 
+dn: uid=tecnic1,ou=users,ou=tecnics,dc=cavicenteru,dc=hades
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: tecnic
+sn: tecnic1
+userPassword: {Crear cadadascú el seu} (cavicenteru)
+loginShell: /bin/bash
+homeDirectory: /home/tecnic
+uidNumber: 5001
+gidNumber: 5000
+ 
+dn: uid=tecnic2,ou=users,ou=tecnics,dc=cavicenteru,dc=hades
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: tecnic
+sn: tecnic2
+userPassword: {Crear cadadascú el seu} (cavicenteru)
+loginShell: /bin/bash
+homeDirectory: /home/tecnic
+uidNumber: 5002
+gidNumber: 5000
+ 
+dn: cn=usuari1,ou=users,ou=usuaris,dc=cavicenteru,dc=hades
+objectClass: organizationalPerson
+sn: usuari1
+ 
+dn: cn=usuari2,ou=users,ou=usuaris,dc=cavicenteru,dc=hades
+objectClass: organizationalPerson
+sn: usuari2
